@@ -6,7 +6,7 @@ var Values = mongoose.model('values', schema);
 
 module.exports = {
     connectDB : function() {
-        mongoose.connect(process.env.MONGODB_ADDON_URI, { useNewUrlParser: true });
+        mongoose.connect('mongodb+srv://adriele:1234@nanos0-colqc.mongodb.net/test?retryWrites=true&w=majority');
     },
 
     updateGauge : function() {
